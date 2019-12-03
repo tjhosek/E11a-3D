@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://partTwo.gd" type="Script" id=1]
 [ext_resource path="res://PlatformObjects/BlockLarge.tscn" type="PackedScene" id=2]
 [ext_resource path="res://PlatformObjects/blockHexagon.tscn" type="PackedScene" id=3]
 [ext_resource path="res://PlatformObjects/blockQuarter.tscn" type="PackedScene" id=4]
 [ext_resource path="res://peaBody.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Crate.tscn" type="PackedScene" id=6]
 
 [sub_resource type="PhysicsMaterial" id=1]
 
@@ -86,3 +87,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20998, 0.391328, -0.618084 
 
 [node name="peaBody" parent="." instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.5, -1 )
+
+[node name="Crate" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.31794, 1.59019, -2.87695 )
+
+[node name="Crate2" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.851549, -0.0434148, -0.522475, 0, 0.996565, -0.0828091, 0.524275, 0.070516, 0.848624, 1.31794, 2.41152, -2.87695 )
+
+[node name="Crate3" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.851549, -0.0434148, -0.522475, 0.263692, 0.896806, 0.355255, 0.453135, -0.440289, 0.775122, 1.31794, 3.17288, -2.87695 )
+
+[node name="Crate4" parent="." instance=ExtResource( 6 )]
+transform = Transform( 0.627994, -0.45946, -0.628109, 0.632687, 0.77139, 0.0683017, 0.453135, -0.440289, 0.775122, 3.90471, 1.45591, 2.28272 )
